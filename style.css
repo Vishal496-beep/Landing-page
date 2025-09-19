@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img {
+    height: 60px;
+}
+
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a {
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#heroleft {
+    min-width: 50%;
+    
+}
+#heroleft .elem {
+    height: 8.8vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#heroleft .elem h1{
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 200;
+    font-size: 11vw;
+}
+#heroleft button {
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+#heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 15%;
+    color: #fff;
+}
+
+#heroright p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#heroright #imagediv{
+  width: 100%;
+  height: 170px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-image: url(https://media.istockphoto.com/id/2119843815/photo/pretty-woman-in-red-dress-glamor-red-lips-attractive-look-cropped-view.jpg?s=2048x2048&w=is&k=20&c=wgL8SrCr60ICwekP0Hwfe3_SjTFiJB6XEEVNyUm0YNo=);
+  background-size: cover;
+  background-position: center;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 70px;
+}
